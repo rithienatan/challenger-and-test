@@ -36,6 +36,8 @@ class Main
 
         result = response.toString();
 
+        connectar.disconnect();
+
         return(result);
     }//end requestGetHTTP()
 
@@ -107,38 +109,11 @@ class Main
         return(fw);
     }//end answerJSON
 
-    public static void requestPostHTTP(FileInputStream answer) throws IOException
-    {
-        String myToken = "7643263f3a746a6b5eef3541a8f51cc99f46f3ae";   
-        URL url = new URL("https://api.codenation.dev/v1/challenge/dev-ps/submit-solution?token=" + myToken);
-
-        HttpURLConnection connectar = (HttpURLConnection) url.openConnection();
-        connectar.setRequestMethod("POST");
-        connectar.setRequestProperty("Content-Type", "multipart/form-data");
-
-        connectar.setDoOutput(true);
-        OutputStream os = connectar.getOutputStream();
-        os.write(answer.read());
-        os.flush();
-        os.close();
-
-
-        System.out.println(connectar.getResponseCode());
-        if(connectar.getResponseCode() == HttpURLConnection.HTTP_OK)
-        {
-            System.out.println("Submit");
-        }
-    }//end requestPostHTTP()
-
     public static void main(String[] args) throws IOException
     {
         String jsonInfo = requestGetHTTP();
 
         FileWriter fw = answerJSON("answer.json", jsonInfo);
         fw.close();
-
-        FileInputStream json = new FileInputStream("answer.json");
-
-        requestPostHTTP(json);
     }//end main
 }//end class
