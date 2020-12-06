@@ -5,14 +5,14 @@
  * 
  */
 
-class QuestaoI
+class QuestaoII
 {
-    private QuestaoI instance;
+    private QuestaoII instance;
 
-    public QuestaoI getInstance()
+    public QuestaoII getInstance()
     {
         if(instance == null)
-        { instance = new QuestaoI(); }
+        { instance = new QuestaoII(); }
 
         return instance;
     }
