@@ -2,7 +2,7 @@
  * @author Rithie Natan Carvalhaes Prado
  * @email rithienatan@gmail.com
  * @version 1.0.0 - stable
- * Latest Update - 06/08/2020
+ * Latest Update - 21/07/2021
  * 
  * Descrição da resolução da prova:
  * 1º Todas as estruturas estão no formato de Programação Orientada a Objeto (POO).

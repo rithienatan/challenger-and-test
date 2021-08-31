@@ -5,7 +5,7 @@ import 'package:http/http.dart' as http;
 Future<RequestAnswer> fetchRequest() async
 {
   final response = await http.get('https://us-central1-ss-devops.cloudfunctions.net/rand?min=1&max=300');
-
+                                  
   if(response.statusCode == 200)
   { return RequestAnswer.fromJSON(json.decode(response.body)); }
   else
