@@ -1,0 +1,11 @@
+{
+  "hosting": {
+    "site": "skyler-project-test",
+    "public": "build",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}

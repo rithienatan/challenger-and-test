@@ -1,0 +1,27 @@
+/*---------- Globals ----------*/
+.header {
+    padding: 5vh 0 5vh 0;
+    display: flex;
+    justify-content: center;
+    background-color: #FCDDBC;
+}
+
+main {
+    margin-top: 5vh;
+}
+
+.formsCar {
+    margin-bottom: 5vh;
+}
+
+.formElement {
+    margin-bottom: 2vh;
+}
+
+.carAttributes {
+    margin-bottom: 3vh;
+}
+
+.visualizarCar {
+    margin-bottom: 3vh;
+}

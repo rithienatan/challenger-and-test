@@ -1,0 +1,23 @@
+/*----------- Globals ----------*/
+.header {
+    text-align: center;
+    background-color: #C2DFE3;
+    padding: 7vw 5vw 7vw 5vw;
+}
+
+.header-sectitle {
+    display: flex;
+    justify-content: center;
+}
+
+.header-icon {
+    margin-right: 1vw;
+    font-size: 2.5em;
+}
+
+/*----------- Mobile First ----------*/
+@media only screen and (max-width: 1080px) {
+    .header {
+        padding: 15vw 5vw 15vw 5vw;
+    }
+}

@@ -1,0 +1,26 @@
+/*----------- Globals ----------*/
+.show-postalcode 
+{ padding: 1vw 15vw 0vw 15vw; }
+
+.input-postalcode {
+    margin-bottom: 1vw;
+    width: 55vw !important;
+}
+.show-alert {
+    margin-top: 2vw;
+    padding: 2vw 1vw 5vw 1vw;
+}
+
+.form-update {
+    display: flex;
+    justify-content: space-between;
+}
+
+/*----------- Mobile First ----------*/
+@media only screen and (max-width: 1080px) {
+    .show-postalcode 
+    { padding: 2vw 1vw 5vw 1vw; }
+
+    .input-postalcode 
+    { width: 65vw !important; }
+}
